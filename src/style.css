@@ -56,3 +56,11 @@ h2 {
   max-width: 100%;
   padding-left: 0px;
 }
+.code-link {
+  max-width: 600px;
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  padding-top: 10px;
+}
