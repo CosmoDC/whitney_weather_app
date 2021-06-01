@@ -1,0 +1,58 @@
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 70px;
+}
+.mb-3 {
+  max-width: 600px;
+  margin: 30px auto;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.app {
+  border-style: solid;
+  border-width: 1px;
+  max-width: 600px;
+  border-radius: 5px;
+  border-color: gray;
+  padding: 50px 45px 45px 45px;
+  margin: 0px auto;
+}
+.col-6 {
+  padding: 0px;
+  margin-top: 0;
+  margin-right: 40px;
+  height: 80px;
+}
+.large-icon {
+  color: #ebd85e;
+  font-size: 70px;
+}
+.col-4 {
+  padding: 1em 0;
+  line-height: 0.45;
+  height: 80px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.date {
+  line-height: 0%;
+  margin-bottom: 10px;
+}
+
+.forecast {
+  background-color: rgba(133, 192, 226, 0.3);
+  padding: 5px;
+  border-radius: 5px;
+}
+.card {
+  background-color: rgba(110, 110, 110, 0.1);
+  border-style: none;
+}
+.col-sm-2 {
+  margin: 0 11.5px;
+  max-width: 100%;
+  padding-left: 0px;
+}
