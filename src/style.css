@@ -28,7 +28,7 @@ h2 {
 .col-6 {
   padding: 0px;
   margin-top: 0;
-  margin-right: 40px;
+
   height: 80px;
 }
 .large-icon {
@@ -39,7 +39,7 @@ h2 {
   padding: 1em 0;
   line-height: 0.45;
   height: 80px;
-  margin-left: 40px;
+  margin-left: 30px;
   display: inline-block;
 }
 .date {
