@@ -61,6 +61,12 @@ h2 {
   max-width: 100%;
   padding-left: 0px;
 }
+.temp-type {
+  font-size: 16px;
+  text-align: start;
+  position: relative;
+  top: -34px;
+}
 .code-link {
   max-width: 600px;
   text-align: left;
