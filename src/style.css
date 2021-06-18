@@ -30,11 +30,11 @@ h2 {
   color: #ebd85e;
   font-size: 70px;
 }
-.col-4 {
+.col-3 {
   padding: 1em 0;
   line-height: 0.45;
   height: 80px;
-  margin-left: 20px;
+  margin-left: 40px;
   display: inline-block;
 }
 .date {
