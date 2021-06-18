@@ -1,4 +1,4 @@
-function formatDate() {
+function formatDate(timestamp) {
   let days = [
     "Sunday",
     "Monday",
@@ -8,30 +8,35 @@ function formatDate() {
     "Friday",
     "Saturday",
   ];
-  let now = new Date();
-  let hour = now.getHours();
-  let minutes = now.getMinutes();
-  let day = days[now.getDay()];
+  let date = new Date(timestamp);
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let day = days[date.getDay()];
   let currentDate = `${day} ${hour}:${minutes}`;
   return currentDate;
 }
 formatDate();
 
-//Week 5 additions//
-
 function displayWeather(response) {
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#date").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(event) {
