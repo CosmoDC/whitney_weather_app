@@ -21,22 +21,27 @@
   <body>
     <div class="input-group mb-3">
       <form class="search-form" id="search-form">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Enter a city"
-          aria-label="Recipient's username"
-          aria-describedby="button-addon2"
-          id="city-input"
-        />
+        <div class="row">
+          <div class="col-11">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter a city"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              id="city-input"
+            />
+          </div>
+          <div class="col-1">
+            <input
+              type="submit"
+              value="Search"
+              class="btn btn-outline-secondary"
+              id="search-button"
+            />
+          </div>    
+         </div>   
       </form>
-      <button
-        class="btn btn-outline-secondary"
-        type="button"
-        id="search-button"
-      >
-        Search
-      </button>
     </div>
     <div class="app">
       <p>Last updated at<br><span id="date"></span></p>
