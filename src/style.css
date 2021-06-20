@@ -5,16 +5,21 @@ h1 {
 h2 {
   font-size: 70px;
 }
+
 .mb-3 {
   max-width: 600px;
-  margin: 25px auto;
+  margin: 0px auto;
 }
 .col-11 {
   padding-right: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+  margin-top: 25px;
 }
 .col-1 {
   padding-left: 3px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 25px;
 }
 .app {
   border-style: solid;
@@ -28,18 +33,15 @@ h2 {
 .col-6 {
   padding: 0px;
   margin-top: 0;
-
+  column-width: 500px;
   height: 80px;
 }
-.large-icon {
-  color: #ebd85e;
-  font-size: 70px;
-}
+
 .col-3 {
   padding: 1em 0;
   line-height: 0.45;
   height: 80px;
-  margin-left: 30px;
+  margin-left: 80px;
   display: inline-block;
 }
 .date {
@@ -65,7 +67,8 @@ h2 {
   font-size: 16px;
   text-align: start;
   position: relative;
-  top: -34px;
+  top: -38px;
+  display: inline-block;
 }
 .code-link {
   max-width: 600px;
