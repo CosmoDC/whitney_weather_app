@@ -73,6 +73,24 @@ h2 {
 .temp-type .active:hover {
   text-decoration: none;
 }
+.weather-forecast {
+  margin-top: 40px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 14px;
+}
 .code-link {
   max-width: 600px;
   text-align: left;
