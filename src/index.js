@@ -22,6 +22,8 @@ function displayForecast() {
 
   let days = ["Thu", "Fri", "Sat", "Sun"];
 
+  ///WEEK 8 ERROR///
+
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
     forecastHTML =
@@ -46,14 +48,13 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
-
+///
 
 function displayWeather(response) {
   let iconElement = document.querySelector("#icon");
 
-  ///edits///
   fahrenheitTemperature = response.data.main.temp;
-  ///
+
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -87,7 +88,6 @@ function searchCity(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
 
-///edits///
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -113,3 +113,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+displayForecast();
