@@ -107,5 +107,6 @@ function searchCity(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
 
-search("District of Columbia");
+searchCity("District of Columbia");
+
 displayForecast();
