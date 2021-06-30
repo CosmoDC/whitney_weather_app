@@ -92,21 +92,19 @@ function displayWeather(response) {
 
 function getForecast(coordinates) {
   let apiKey = "ad54f2135489067bc74456800570c981";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude={part}&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
-
-function searchCity(event) {
+function search(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
+  searchCity(city);
+}
+function searchCity(city) {
   let apiKey = "ad54f2135489067bc74456800570c981";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeather);
 }
-
 let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", searchCity);
-
+searchForm.addEventListener("submit", search);
 searchCity("District of Columbia");
-
-displayForecast();
