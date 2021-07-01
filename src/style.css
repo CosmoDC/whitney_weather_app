@@ -1,5 +1,5 @@
 h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
@@ -98,7 +98,7 @@ h2 {
 }
 
 .weather-forecast {
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
   color: #000;
 }
@@ -136,6 +136,4 @@ h2 {
 }
 .github:hover {
   color: #38736f;
-}
-#search-button {
 }
