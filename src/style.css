@@ -29,6 +29,7 @@ h2 {
   border-color: gray;
   padding: 50px 45px 45px 45px;
   margin: 0px auto;
+  box-shadow: 12px 10px 25px gainsboro;
 }
 .col-6 {
   padding: 0px;
